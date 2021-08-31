@@ -5,14 +5,14 @@ public class NestedLists {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of ArrayLists : ");
         int n = sc.nextInt();
-        List<List<Integer>> rows = new ArrayList<>();
+        List<List<Integer>> rows = new ArrayList<>();                                      //ARRAY LIST USED
         int count = 1;
         for(int i=0; i<n; i++){
             System.out.print("Enter size of List " + count + " : ");
             count++;
             int d = sc.nextInt();
             System.out.print("Enter elements : ");
-            List<Integer> row = new ArrayList<>();
+            List<Integer> row = new ArrayList<>();                                      // ARRAY LIST USED
             for(int j=0; j<d; j++){
                 row.add(sc.nextInt());
             }
@@ -31,8 +31,8 @@ public class NestedLists {
 
             System.out.println("Solution for query "+ count2 + " : ");
             try{
-                System.out.println(rows.get(x-1).get(y-1));
-            }
+                System.out.println(rows.get(x-1).get(y-1));                              // CALLED ARRAY LIST FROM AN ARRAY LIST
+            }                                                                           // HOW COOL IS THAT
             catch (Exception e){
                 System.out.println("ERROR!!!");
             }
